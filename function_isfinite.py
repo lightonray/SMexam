@@ -2,4 +2,4 @@ import math
 
 
 def my_finitefunction(x):
-    pass
+    return math.isfinite(x)
