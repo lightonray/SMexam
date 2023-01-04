@@ -10,6 +10,11 @@ class TestDevisionResults(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.assertEqual(my_finitefunction("hello"), True)
 
+    def test_empty_value(self):
+        with self.assertRaises(TypeError):
+            self.assertEqual(my_finitefunction(None), True)
 
+        
+    
 if __name__ == '__main__':
     unittest.main()
